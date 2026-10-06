@@ -11,14 +11,80 @@ body {
 
     section.header {
         display: flex;
+        align-items: center;
         width: 100%;
         background-image: url("files/output-onlinepngtools.png");
         background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
 
         > nav.topnav {
-            width: 80%;
+            width: auto;
+            align-items: center;
+            margin-right: 690px;
+
+            ul {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                background: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            ul li {
+                display: inline-block;
+                position: relative;
+            }
+
+            ul li a {
+                display: block;
+                padding: 10px 25px;
+                color: #FFF;
+                text-decoration: none;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+
+            ul li ul.dropdown1 li {
+                display: block;
+                width: 100%;
+                margin: 0;
+            }
+
+            ul li ul.dropdown1 li a {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 25px 10px;
+                margin: 0;
+                text-align: center;
+            }
+            ul li:last-child a {
+                white-space: nowrap;
+            }
+
+            ul li ul.dropdown1 {
+                width: 130px;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: lightslategrey;
+                z-index: 999;
+                display: none;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+
+            ul li a:hover {
+                background: slategray;
+            }
+
+            ul li:hover ul.dropdown1 {
+                display: block;
+            }
+            }
+
             text-align: left;
             font-size: 14px;
 
@@ -33,7 +99,7 @@ body {
 
 
                 img {
-                    width: 5%;
+                    width: 33px;
                     vertical-align: middle;
                 }
 
@@ -48,13 +114,13 @@ body {
         }
 
         div.login{
-            width: 20%;
+            width: auto;
             border-radius: 20px;
             background-color: lightblue;
             text-align: center;
-            padding-top: 8px;
+            padding: 10px 0;
             font-size: 13px;
-            margin: 10px;
+            margin-right: 50px;
 
 
 
@@ -87,9 +153,8 @@ body {
     section.bottom {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: auto;
         height: 44px;
         background-color: slategrey;
     }
 
-}
