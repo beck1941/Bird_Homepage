@@ -3,22 +3,15 @@ body {
     margin: 0;
 
     div.container {
-        width: auto;
-        height: auto;
 
         section.header {
             display: flex;
             flex-direction: row;
-            align-items: center;
-            width: 100%;
             background-image: url("files/output-onlinepngtools.png");
             background-size: cover;
             border-bottom: slategray 5px solid;
 
             > nav.top-nav {
-                width: auto;
-                align-items: center;
-                margin-right: 690px;
 
                 ul {
                     display: flex;
